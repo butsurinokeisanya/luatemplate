@@ -1,0 +1,12 @@
+rm *.aux
+rm *.bbl
+rm *.blg
+rm *.idx
+rm *.ilg
+rm *.ind
+rm *.lof
+rm *.log
+rm *.lot
+rm *.out
+rm *.synctex.gz
+rm *.toc
