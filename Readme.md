@@ -312,21 +312,15 @@ VBA
 \end{screen}
 ```
 
-### book → articleへの変更は次のように置換する.
+### book → articleへの変更
+ltjbook → ltjsarticleの変更だけでbook形式からarticle形式へ変更できる.
 ```
 \documentclass[11pt,a4paper, titlepage]{ltjsarticle}
-\subsubsection → \subsubsubsection
-\subsection → \subsubsection
-\section → \subsection
-\chapter → \section
 ```
-小さい順に格下げ
-### book → articleへの変更は次のように置換する.
+book形式, article形式を問わず以下のコマンドを使う
 ```
-\documentclass[11pt,a4paper, titlepage]{ltjsbook}
-\section → \chapter
-\subsection → \section
-\subsubsection → \subsection
-\subsubsubsection → \subsubsection
+\chapter # 章
+\section  # 節
+\subsection # 小説
+\subsubsection # 小々節
 ```
-大きい順に格上げ.
