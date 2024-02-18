@@ -57,17 +57,12 @@
 %**********************************************************************%
 % ドキュメントクラス
 %----------------------------------------------------------------------%
-<<<<<<< HEAD
 \documentclass[11pt,a4paper, titlepage]{ltjsarticle}
-=======
-\documentclass[11pt,a4paper, titlepage]{ltjsbook}
->>>>>>> 4609bac839c02d6d33443e5e9e76761674de622f
 % USAGE
 % - ltjsarticle, ltjsreport, ltjsbook
 % - twocolumn: 2段組にする.
 % - titlepage: \maketitle, apstractを単独ページにする.
 % - draft: 校正用のオプション.
-<<<<<<< HEAD
 % ### book → articleへの変更は次のように置換する.
 % ```
 % \subsubsection → \subsubsubsection
@@ -85,8 +80,6 @@
 % ```
 % 大きい順に格上げ.
 % 
-=======
->>>>>>> 4609bac839c02d6d33443e5e9e76761674de622f
 %**********************************************************************%
 % ページ番号をフッターに表示
 %----------------------------------------------------------------------%
@@ -95,7 +88,6 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot{}
-<<<<<<< HEAD
 
 \makeatletter
 \@ifclassloaded{ltjsarticle}{
@@ -136,25 +128,6 @@
   }
 }
 \makeatother
-=======
-% 奇数ページは右下、偶数ページは左下にページ番号を表示
-\fancyfoot[LE,RO]{\thepage}
-%\cfoot{\thepage~/~\pageref{LastPage}} %中央揃え"今のページ数/総ページ数"
-% ヘッダーに章と節を表示
-\renewcommand{\chaptermark}[1]{\markboth{第\ \thechapter 章 \ #1}{}}
-\renewcommand{\sectionmark}[1]{\markright{\thesection \ #1}}
-\fancyhead[LE]{\leftmark} % 偶数ページのヘッダーに章を表示
-\fancyhead[RO]{\rightmark} % 奇数ページのヘッダーに節を表示
-\fancypagestyle{plainhead}{}
-\fancypagestyle{plainfoot}{}
-% TeXは米国規格のレターボックスサイズ（A4サイズより小さい）向けに
-% チューニングされており、1行の長さが全角40文字を超えないようにしている
-% 1行40文字の制限をなくすと左右に極端に寄ることがなくなる.
-\setlength{\fullwidth}{\oddsidemargin}
-\setlength{\oddsidemargin}{\evensidemargin}
-\setlength{\evensidemargin}{\fullwidth} %偶数ページの左余白を10mm(+1インチ)
-\setlength{\fullwidth}{\textwidth} %奇数ページの左余白を10mm(+1インチ
->>>>>>> 4609bac839c02d6d33443e5e9e76761674de622f
 
 %**********************************************************************%
 % フォント
@@ -363,12 +336,9 @@ bookmarksdepth=subsubsection]{hyperref}
 \newcommand{\FuncCall}[2]{\texttt{\bfseries #1(#2)}}
 \SetKwProg{Function}{function}{}{}
 \renewcommand{\ProgSty}[1]{\texttt{\bfseries #1}}
-<<<<<<< HEAD
 \usepackage{graphicx}
 \renewcommand{\thefootnote}{\arabic{footnote}}
-=======
 
->>>>>>> 4609bac839c02d6d33443e5e9e76761674de622f
 %**********************************************************************%
 %      _                                       _
 %   __| | ___   ___ _   _ _ __ ___   ___ _ __ | |_
@@ -380,7 +350,6 @@ bookmarksdepth=subsubsection]{hyperref}
 %**********************************************************************%
 % タイトル
 %----------------------------------------------------------------------%
-<<<<<<< HEAD
 % \title{Lua\LaTeX\index{lualatex} テンプレート\footnote{本書の記載内容は情報使用の目的で提供される. 記載内容は予告なく変更することがあり, その内容については筆者のせきにんとはみなされない. 本書にきさいされている情報の正確性および信頼性には万全を期しているが, 本書における誤りや不正確な情報により生じる損害に関して, また,
 %         コードを利用して得られた文書への責任ン位関して著者は一切の責任を持たない.
 %         \\本書の内容はWindows11, Mac Sonomaで動作確認をしている.
@@ -400,17 +369,6 @@ bookmarksdepth=subsubsection]{hyperref}
     \vspace*{\fill}
     \includegraphics[width=0.4\textwidth]{img/template.png}
 \end{titlepage}
-=======
-\title{Lua\LaTeX\index{lualatex} テンプレート\footnote{本書の記載内容は情報使用の目的で提供される. 記載内容は予告なく変更することがあり, その内容については筆者のせきにんとはみなされない. 本書にきさいされている情報の正確性および信頼性には万全を期しているが, 本書における誤りや不正確な情報により生じる損害に関して, また,
-        コードを利用して得られた文書への責任ン位関して著者は一切の責任を持たない.
-        \\本書の内容はWindows11, Mac Sonomaで動作確認をしている.
-        \\本書の内容は著作権法上の保護を上kる. 著者の文書による承認を得ずに,
-        本書の内容の一部, あるいは全部を無断で複写(コピー)・複製・転載することを禁ずる.}
-    \\第1版}
-\author{名前太郎\thanks{名前太郎の所属} \and 名前次郎\thanks{名前次郎の所属}}
-\date{\today}
-\maketitle
->>>>>>> 4609bac839c02d6d33443e5e9e76761674de622f
 
 %**********************************************************************%
 % 本文より前のページ数はローマ数字とする.
@@ -431,27 +389,20 @@ bookmarksdepth=subsubsection]{hyperref}
 % 目次
 %----------------------------------------------------------------------%
 \tableofcontents
-<<<<<<< HEAD
 \newpage
 \listoffigures
 \newpage
-=======
-\listoffigures
->>>>>>> 4609bac839c02d6d33443e5e9e76761674de622f
 \listoftables
 \newpage
 %**********************************************************************%
 % 本文のページ数はアラビア数字とする.
 %----------------------------------------------------------------------%
 \pagenumbering{arabic}
-<<<<<<< HEAD
 \makeatletter
 \@ifclassloaded{ltjsarticle}{
     \cfoot{\thepage~/~\pageref{LastPage}}
 }
 \makeatother
-=======
->>>>>>> 4609bac839c02d6d33443e5e9e76761674de622f
 %**********************************************************************%
 % ダミー本文
 %----------------------------------------------------------------------%
@@ -460,17 +411,10 @@ bookmarksdepth=subsubsection]{hyperref}
 \lipsum[1-5]
 \section{ダミー節 \label{sec:1}}
 \lipsum[6-20]
-<<<<<<< HEAD
 \lipsum[21-25]
 \paragraph{ダミーパラグラフ}
 \lipsum[20]
 \subsection{ほげ}
-=======
-\subsubsection{ダミー小節}
-\lipsum[21-25]
-\paragraph{ダミーパラグラフ}
-\lipsum[20]
->>>>>>> 4609bac839c02d6d33443e5e9e76761674de622f
 
 \chapter{フォント・装飾}
 %**********************************************************************%
