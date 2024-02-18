@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.1.21)  18 FEB 2024 21:28
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.1.21)  18 FEB 2024 21:29
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/butsu/OneDrive/ドキュメント/6_Tex/luatemplate/luatemplate/luatemplate
@@ -35,18 +35,28 @@ Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
-Inserting `tracingstacklevels' in `input_level_string'.)
-! Emergency stop.
-<*> ...ト/6_Tex/luatemplate/luatemplate/luatemplate
+Inserting `tracingstacklevels' in `input_level_string'. (c:/texlive/2023/texmf-dist/tex/latex/plautopatch/plautopatch.sty
+Package: plautopatch 2021/12/07 v0.9q Automated patches for pLaTeX/upLaTeX
+Package plautopatch Info: This package is meant for pLaTeX/upLaTeX,
+(plautopatch)             you will not need it. on input line 16.
+)
+
+c:/Users/butsu/OneDrive/ドキュメント/6_Tex/luatemplate/luatemplate/luatemplate.tex:60: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
                                                   
+l.60 <
+    <<<<<< HEAD
 
 Here is how much of LuaTeX's memory you used:
- 19 strings out of 476497
+ 41 strings out of 476497
  100000,1977958 words of node,token memory allocated
- 301 words of node memory still in use:
-   1 hlist, 1 dir, 3 kern, 1 glyph, 1 attribute, 39 glue_spec, 1 attribute_list nodes
-   avail lists: 2:10,3:3,4:1
- 22183 multiletter control sequences out of 65536+600000
+ 333 words of node memory still in use:
+   2 hlist, 1 local_par, 1 dir, 1 glue, 3 kern, 1 glyph, 3 attribute, 39 glue_spec, 3 attribute_list, 1 temp nodes
+   avail lists: 2:5,3:3,4:1,5:1,7:1
+ 22199 multiletter control sequences out of 65536+600000
  14 fonts using 591679 bytes
- 12i,0n,13p,0b,15s stack positions out of 10000i,1000n,20000p,200000b,200000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 27i,0n,36p,158b,17s stack positions out of 10000i,1000n,20000p,200000b,200000s
+c:/Users/butsu/OneDrive/ドキュメント/6_Tex/luatemplate/luatemplate/luatemplate.tex:60:  ==> Fatal error occurred, no output PDF file produced!
